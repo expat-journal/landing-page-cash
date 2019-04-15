@@ -1,26 +1,52 @@
 .cta {
     display: flex;
-//    border: 1px solid black;
     justify-content: space-between;
     align-items: center;
     margin: 0px 10rem;
-        
-    .cta_why {
-//        border: 1px solid red;
-    }
-    
-    .cta_login {
-//        border: 1px solid blue;
-    }
-    
+    border-bottom: 4px solid @grey;
     .cta_img {
 //        border: 1px solid red;
         
         img {
             width: 35rem;
             height: 35rem;
+            padding: 1rem;
+            margin: 2rem;
+            border-radius: 5rem;
         }
     }
-
+    
+    
+    .cta_column {
+//        border: 1px solid red;
+        background: @dark-vanilla;
+        padding: 1rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .cta_why {
+                
+            h1, p {
+                margin-top: 1rem;
+                color: @apple-red;
+            }
+        }
+        
+        .btn {
+            border-radius: 2rem;
+            width: 200px;
+            height: 50px;
+            background-color: @eggshell-white;
+            cursor: pointer;
+            font-size: 2rem;
+            color: @jelly-red;
+            
+            &:hover {
+                background-color: @jelly-red;
+                color: @eggshell-white;
+            }
+        }
+    }  
 } 
 

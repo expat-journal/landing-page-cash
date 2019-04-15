@@ -128,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  background: #EAE7DC;
 }
 html {
   font-size: 62.5%;
@@ -162,8 +161,9 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 .container {
-  max-width: 98%;
+  max-width: 100%;
   margin: 0 auto;
+  background: #EAE7DC;
 }
 header {
   margin-bottom: 5rem;
@@ -171,7 +171,7 @@ header {
 header .header_content {
   justify-content: center;
   display: flex;
-  color: #E98074;
+  color: #E85A4F;
 }
 header .nav {
   display: flex;
@@ -181,14 +181,59 @@ header .nav a {
   font-size: 3rem;
   text-decoration: none;
   color: #8E8D8A;
+  margin-right: 3rem;
 }
 .cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px 10rem;
+  border-bottom: 4px solid #8E8D8A;
 }
 .cta .cta_img img {
   width: 35rem;
   height: 35rem;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 5rem;
+}
+.cta .cta_column {
+  background: #D8C3A5;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cta .cta_column .cta_why h1,
+.cta .cta_column .cta_why p {
+  margin-top: 1rem;
+  color: #E85A4F;
+}
+.cta .cta_column .btn {
+  border-radius: 2rem;
+  width: 200px;
+  height: 50px;
+  background-color: #EAE7DC;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #E98074;
+}
+.cta .cta_column .btn:hover {
+  background-color: #E98074;
+  color: #EAE7DC;
+}
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottom .interactive,
+.bottom .social,
+.bottom .fun {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #D8C3A5;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
