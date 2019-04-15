@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -163,15 +163,15 @@ p {
 .container {
   max-width: 100%;
   margin: 0 auto;
-  background: #EAE7DC;
+  background: #182628;
 }
 header {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 header .header_content {
   justify-content: center;
   display: flex;
-  color: #E85A4F;
+  color: #65CCB8;
 }
 header .nav {
   display: flex;
@@ -180,15 +180,16 @@ header .nav {
 header .nav a {
   font-size: 3rem;
   text-decoration: none;
-  color: #8E8D8A;
-  margin-right: 3rem;
+  color: #65CCB8;
+  margin: 0.2rem 2rem 0 0;
+  cursor: pointer;
 }
 .cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px 10rem;
-  border-bottom: 4px solid #8E8D8A;
+  border-bottom: 4px dashed #f2f2f2;
 }
 .cta .cta_img img {
   width: 35rem;
@@ -198,30 +199,29 @@ header .nav a {
   border-radius: 5rem;
 }
 .cta .cta_column {
-  background: #D8C3A5;
   padding: 1rem;
   border-radius: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .cta .cta_column .cta_why h1,
 .cta .cta_column .cta_why p {
   margin-top: 1rem;
-  color: #E85A4F;
+  color: #f2f2f2;
 }
 .cta .cta_column .btn {
   border-radius: 2rem;
   width: 200px;
   height: 50px;
-  background-color: #EAE7DC;
+  background-color: #65CCB8;
   cursor: pointer;
   font-size: 2rem;
-  color: #E98074;
+  color: #182628;
 }
 .cta .cta_column .btn:hover {
-  background-color: #E98074;
-  color: #EAE7DC;
+  background-color: #182628;
+  color: #65CCB8;
 }
 .bottom {
   display: flex;
@@ -233,7 +233,8 @@ header .nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #D8C3A5;
-  padding: 0.5rem;
-  margin: 0.5rem;
+  background: #65CCB8;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 2rem;
 }
