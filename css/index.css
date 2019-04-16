@@ -164,10 +164,65 @@ p {
   max-width: 100%;
   margin: 0 auto;
   background: #182628;
+  color: #f2f2f2;
+}
+#c2 header {
+  margin-bottom: 5rem;
+}
+.about_main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.about_main .about_mission,
+.about_main .about_location {
+  width: 30rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.team1,
+.team2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.team1 .max,
+.team2 .max,
+.team1 .stephanie,
+.team2 .stephanie,
+.team1 .amarachi,
+.team2 .amarachi,
+.team1 .jeremiah,
+.team2 .jeremiah,
+.team1 .thierry,
+.team2 .thierry,
+.team1 .cash,
+.team2 .cash {
+  background: #65CCB8;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  width: 40.15rem;
+  height: 28.5rem;
+}
+.team1 .max p,
+.team2 .max p,
+.team1 .stephanie p,
+.team2 .stephanie p,
+.team1 .amarachi p,
+.team2 .amarachi p,
+.team1 .jeremiah p,
+.team2 .jeremiah p,
+.team1 .thierry p,
+.team2 .thierry p,
+.team1 .cash p,
+.team2 .cash p {
+  color: #182628;
 }
 header {
   display: flex;
   margin-bottom: 1rem;
+  padding-top: 1rem;
   justify-content: space-between;
 }
 header .header_content {
