@@ -1,0 +1,66 @@
+
+#c2 header {
+    
+    margin-bottom: 5rem;
+}
+
+
+
+
+.about_main {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    @media @mobile {
+        width: 100%;
+        margin: auto 1rem;
+        padding: .5rem;
+    }
+    
+    .about_mission, .about_location {
+        width: 30rem;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+         @media @mobile {
+        width: 100%;
+    }
+
+        
+    }
+}
+
+
+.team1, .team2 {
+  display: flex;
+  justify-content: space-evenly;
+   
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    
+    .max, .stephanie, .amarachi, .jeremiah, .thierry, .cash {
+        background: @epic-teal;
+        padding: 1rem;
+        margin: 2rem;
+        border-radius: 2rem;
+        width: 40.15rem;
+        height: 28.5rem;
+        
+        @media @mobile {
+        width: 80%;
+        margin: 1rem auto;
+    }
+        
+        p {
+            color: @eggshell-white;
+        }
+    }
+}
+
+
+

@@ -1,15 +1,25 @@
 .cta {
+//    border: 1px solid red;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px 10rem;
     border-bottom: 4px dashed @white;
+    
+    @media @mobile {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        align-content: center;
+        
+    }
     .cta_img {
 //        border: 1px solid red;
         
         img {
             width: 35rem;
-            height: 35rem;
+            height: auto;
             padding: 1rem;
             margin: 2rem;
             border-radius: 5rem;
@@ -18,13 +28,18 @@
     
     
     .cta_column {
-//        border: 1px solid red;
+
 //        background: @dark-vanilla;
         padding: 1rem;
         border-radius: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        
+        @media @mobile {
+        width: 100%;
+    }
+
         .cta_why {
                 
             h1, p {
@@ -42,11 +57,17 @@
             font-size: 2rem;
             color: @eggshell-white;
             
+            
+            @media @mobile {
+                width: 30rem;
+            }
             &:hover {
                 background-color: @eggshell-white;
                 color: @epic-teal;
             }
+            
         }
     }  
 } 
+
 
