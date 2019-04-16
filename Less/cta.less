@@ -1,0 +1,52 @@
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10rem;
+    border-bottom: 4px dashed @white;
+    .cta_img {
+//        border: 1px solid red;
+        
+        img {
+            width: 35rem;
+            height: 35rem;
+            padding: 1rem;
+            margin: 2rem;
+            border-radius: 5rem;
+        }
+    }
+    
+    
+    .cta_column {
+//        border: 1px solid red;
+//        background: @dark-vanilla;
+        padding: 1rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .cta_why {
+                
+            h1, p {
+                margin-top: 1rem;
+                color: @white;
+            }
+        }
+        
+        .btn {
+            border-radius: 2rem;
+            width: 200px;
+            height: 50px;
+            background-color: @epic-teal;
+            cursor: pointer;
+            font-size: 2rem;
+            color: @eggshell-white;
+            
+            &:hover {
+                background-color: @eggshell-white;
+                color: @epic-teal;
+            }
+        }
+    }  
+} 
+
