@@ -166,23 +166,25 @@ p {
   background: #182628;
 }
 header {
+  display: flex;
   margin-bottom: 1rem;
+  justify-content: space-between;
 }
 header .header_content {
-  justify-content: center;
-  display: flex;
   color: #65CCB8;
 }
 header .nav {
-  display: flex;
-  justify-content: flex-end;
+  margin: 0 auto;
 }
-header .nav a {
+header .nav a,
+header .nav p {
   font-size: 3rem;
   text-decoration: none;
   color: #65CCB8;
-  margin: 0.2rem 2rem 0 0;
   cursor: pointer;
+}
+header .navHidden #hidden {
+  visibility: hidden;
 }
 .cta {
   display: flex;
