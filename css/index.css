@@ -145,6 +145,7 @@ h5 {
 }
 h1 {
   font-size: 4.1rem;
+  color: #65CCB8;
 }
 h2 {
   font-size: 4rem;
@@ -192,6 +193,7 @@ p {
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  color: #3B945E;
 }
 @media (max-width: 500px) {
   .about_main .about_mission,
@@ -376,8 +378,17 @@ header .navHidden #hidden {
   justify-content: center;
   align-item: center;
   background: #65CCB8;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 1.25%;
+  margin: 1.25%;
   border-radius: 2rem;
   color: #182628;
+}
+@media (max-width: 500px) {
+  .bottom .interactive,
+  .bottom .social,
+  .bottom .fun {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+  }
 }
