@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0px 10rem;
-    border-bottom: 4px dashed @white;
+    border-bottom: 4px dashed @green;
     
     @media @mobile {
         width: 100%;
@@ -15,14 +15,22 @@
         
     }
     .cta_img {
-//        border: 1px solid red;
+        
         
         img {
-            width: 35rem;
+            
+            width: 100%;
+            max-width: 50rem;
             height: auto;
-            padding: 1rem;
+            padding: 3rem;
             margin: 2rem;
-            border-radius: 5rem;
+            border-radius: 4rem;
+            
+            @media @mobile {
+                width: 
+                padding: 0;
+                margin: 0;
+            }
         }
     }
     
@@ -34,28 +42,36 @@
         border-radius: 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        
+        justify-content: center;
+//        border: 1px solid yellow;
+        width: 100%;
+
         @media @mobile {
         width: 100%;
+        justify-content: center;
+
     }
 
         .cta_why {
-                
-            h1, p {
+            justify-content: center;
+            align-items: center;
+            h2, p {
+                text-align: center;
                 margin-top: 1rem;
-                color: @white;
+                color: @green;
+                
             }
         }
         
         .btn {
             border-radius: 2rem;
-            width: 200px;
-            height: 50px;
+            width: 20rem;
+            height: 5rem;
             background-color: @epic-teal;
             cursor: pointer;
             font-size: 2rem;
             color: @eggshell-white;
+            margin-bottom: .4rem;
             
             
             @media @mobile {

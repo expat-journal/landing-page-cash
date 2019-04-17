@@ -2,21 +2,27 @@
     max-width: 100%;
     display: flex;
     justify-content: space-evenly;
+//    border: 1px solid red;
     
     @media @mobile {
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
     .interactive, .social, .fun {
-        display: flex;
+        width: 90%;
+//        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-item: center;
         background: @epic-teal;
         padding: 2rem;
         margin: 2rem;
         border-radius: 2rem;
+        color: @eggshell-white;
         
         @media @mobile {
         }
+        
+        }
     }
-}
