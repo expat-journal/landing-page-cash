@@ -132,7 +132,6 @@ table {
 html {
   font-size: 62.5%;
 }
-html,
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -266,9 +265,9 @@ header {
   max-width: 98%;
   display: flex;
   margin-bottom: 1rem;
+  margin-right: 0;
   padding-top: 1rem;
   justify-content: space-between;
-  border: 1px solid red;
 }
 header .header_content {
   color: #3B945E;
@@ -283,50 +282,14 @@ header .nav p {
   color: #3B945E;
   cursor: pointer;
 }
+header .nav .themeChanger,
+header .nav .imgChanger,
+header .nav .btnChanger,
+header .nav .fontChanger {
+  font-size: 1.5rem;
+}
 header .navHidden #hidden {
   visibility: hidden;
-}
-.dropdown {
-  z-index: 2;
-  position: absolute;
-  left: 25px;
-  cursor: pointer;
-}
-.dropdown .dropdown-button {
-  padding: 15px;
-  border: 3px solid #3B945E;
-  color: #65CCB8;
-  font-size: 20px;
-  font-weight: bold;
-}
-.dropdown .dropdown-button:hover {
-  background-color: #65CCB8;
-  color: #182628;
-}
-.dropdown .dropdown-content {
-  width: 100%;
-  position: absolute;
-  background-color: #182628;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-  border: 2.5px solid #3B945E;
-}
-.dropdown .dropdown-link {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 18px;
-  text-decoration: none;
-  color: #65CCB8;
-}
-.dropdown .dropdown-link:hover {
-  color: #182628;
-  background-color: #65CCB8;
-}
-.dropdown .dropdown-hidden {
-  display: none;
 }
 .cta {
   max-width: 100%;
@@ -347,7 +310,6 @@ header .navHidden #hidden {
 .cta .cta_img img {
   width: 100%;
   max-width: 50rem;
-  height: auto;
   padding: 3rem;
   margin: 2rem;
   border-radius: 4rem;

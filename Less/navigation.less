@@ -2,9 +2,9 @@ header {
     max-width: 98%;
     display: flex;
     margin-bottom: 1rem;
+    margin-right: 0;
     padding-top: 1rem;
     justify-content: space-between;
-    border: 1px solid red;
     .header_content {
         color: @green;
     }
@@ -19,8 +19,11 @@ header {
                 cursor: pointer;
 
             }
-            
-    }
+        
+            .themeChanger, .imgChanger, .btnChanger, .fontChanger {
+                font-size: 1.5rem;
+        }      
+    }   
     
     .navHidden #hidden {
         visibility: hidden;
