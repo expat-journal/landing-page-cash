@@ -30,13 +30,5 @@ changeButton.addEventListener('click', function(eventObject) {
 
 });
 
-//changeFont.addEventListener('click', function(eventObject) {
-//    
-//    console.log("clicked Change Font");
-//    font.fontFamily = "PT Sans Narrow,sans-serif";
-//
-//});
-
-
 
 
