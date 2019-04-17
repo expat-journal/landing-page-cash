@@ -2,10 +2,11 @@ header {
     max-width: 98%;
     display: flex;
     margin-bottom: 1rem;
+    margin-right: 0;
     padding-top: 1rem;
     justify-content: space-between;
     .header_content {
-        color: @epic-teal;
+        color: @green;
     }
     
     
@@ -14,12 +15,15 @@ header {
             a, p {
                 font-size: 3rem;
                 text-decoration: none;
-                color: @epic-teal;
+                color: @green;
                 cursor: pointer;
 
             }
-            
-    }
+        
+            .themeChanger, .imgChanger, .btnChanger, .fontChanger {
+                font-size: 1.5rem;
+        }      
+    }   
     
     .navHidden #hidden {
         visibility: hidden;
