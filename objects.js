@@ -56,3 +56,47 @@ console.log(amarachi);
 console.log(jeremiah);
 console.log(thierry);
 console.log(max);
+
+const team = [{
+    name: 'Cash',
+    role: 'UI/UX Dev',
+    class: 'Web19',
+    gender: 'Male'
+},
+{
+    name: 'Stephanie',
+    role: 'Frontend',
+    class: 'Web18',
+    gender: 'Female'
+},
+{
+    name: 'Amarachi',
+    role: 'Frontend',
+    class: 'Web18',
+    gender: 'Female'
+},
+{
+    name: 'Jeremiah',
+    role: 'Backend',
+    class: 'Web17',
+    gender: 'Male'
+},
+{
+    name: 'Thierry',
+    role: 'UI/UX Dev',
+    class: 'Web19',
+    gender: 'Male'
+},
+{
+    name: 'Max',
+    role: 'Team Leader',
+    class: 'CS15',
+    gender: 'Male'
+}];
+
+let nameAndGender = [];
+team.forEach(function(x) {
+    return nameAndGender.push(`${x.name} is a ${x.gender}`);
+});
+
+console.log(nameAndGender);
