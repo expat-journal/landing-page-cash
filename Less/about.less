@@ -1,8 +1,7 @@
 
-#c2 header {
+#container2 header {
     margin-bottom: 5rem;
 }
-
 
 
 
@@ -27,7 +26,7 @@
         
         
          @media @mobile {
-        width: 100%;
+            width: 100%;
     }
 
         
@@ -35,26 +34,34 @@
 }
 
 
-.team1, .team2 {
-  display: flex;
-  justify-content: space-evenly;
-   
+.team {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+    @media @tablet {
+    }
+    
     @media @mobile {
         flex-direction: column;
     }
 
     
     .max, .stephanie, .amarachi, .jeremiah, .thierry, .cash {
-        background: @light-teal;
-        padding: 1rem;
+        background: @dark-teal;
+        padding: .5rem;
         margin: 2rem;
         border-radius: 1rem;
-        width: 40.15rem;
         height: auto;
+        width: 25%;
+        
+        
+        @media @tablet {
+            width: 40%;
+        }
         
         @media @mobile {
-        width: 80%;
-        margin: 1rem auto;
+            width: 80%;
+            margin: 1rem auto;
     }
         
         p {
@@ -62,6 +69,3 @@
         }
     }
 }
-
-
-

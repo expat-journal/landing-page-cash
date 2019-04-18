@@ -131,10 +131,10 @@ table {
 }
 html {
   font-size: 62.5%;
-  background: #182628;
 }
 body {
   font-family: 'Roboto', sans-serif;
+  background: #182628;
 }
 h1,
 h2,
@@ -149,6 +149,7 @@ h1 {
 }
 h2 {
   font-size: 4rem;
+  cursor: pointer;
 }
 h3 {
   font-size: 3rem;
@@ -161,8 +162,8 @@ p {
 .container {
   max-width: 2000px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background: #182628;
   color: #65CCB8;
 }
 @media (max-width: 500px) {
@@ -171,7 +172,13 @@ p {
     margin: 0 auto;
   }
 }
-#c2 header {
+.black {
+  background-color: black;
+}
+.mirage {
+  background-color: #182628;
+}
+#container2 header {
   margin-bottom: 5rem;
 }
 .about_main {
@@ -199,65 +206,56 @@ p {
     width: 100%;
   }
 }
-.team1,
-.team2 {
+.team {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  .team1,
-  .team2 {
+  .team {
     flex-direction: column;
   }
 }
-.team1 .max,
-.team2 .max,
-.team1 .stephanie,
-.team2 .stephanie,
-.team1 .amarachi,
-.team2 .amarachi,
-.team1 .jeremiah,
-.team2 .jeremiah,
-.team1 .thierry,
-.team2 .thierry,
-.team1 .cash,
-.team2 .cash {
-  background: #65CCB8;
-  padding: 1rem;
+.team .max,
+.team .stephanie,
+.team .amarachi,
+.team .jeremiah,
+.team .thierry,
+.team .cash {
+  background: #57BA98;
+  padding: 0.5rem;
   margin: 2rem;
   border-radius: 1rem;
-  width: 40.15rem;
   height: auto;
+  width: 25%;
+}
+@media (max-width: 787px) {
+  .team .max,
+  .team .stephanie,
+  .team .amarachi,
+  .team .jeremiah,
+  .team .thierry,
+  .team .cash {
+    width: 40%;
+  }
 }
 @media (max-width: 500px) {
-  .team1 .max,
-  .team2 .max,
-  .team1 .stephanie,
-  .team2 .stephanie,
-  .team1 .amarachi,
-  .team2 .amarachi,
-  .team1 .jeremiah,
-  .team2 .jeremiah,
-  .team1 .thierry,
-  .team2 .thierry,
-  .team1 .cash,
-  .team2 .cash {
+  .team .max,
+  .team .stephanie,
+  .team .amarachi,
+  .team .jeremiah,
+  .team .thierry,
+  .team .cash {
     width: 80%;
     margin: 1rem auto;
   }
 }
-.team1 .max p,
-.team2 .max p,
-.team1 .stephanie p,
-.team2 .stephanie p,
-.team1 .amarachi p,
-.team2 .amarachi p,
-.team1 .jeremiah p,
-.team2 .jeremiah p,
-.team1 .thierry p,
-.team2 .thierry p,
-.team1 .cash p,
-.team2 .cash p {
+.team .max p,
+.team .stephanie p,
+.team .amarachi p,
+.team .jeremiah p,
+.team .thierry p,
+.team .cash p {
   color: #182628;
 }
 header {
@@ -280,7 +278,8 @@ header .nav {
   margin: 0 auto;
 }
 header .nav a,
-header .nav p {
+header .nav p,
+header .nav h2 {
   font-size: 3rem;
   text-decoration: none;
   color: #3B945E;
@@ -288,7 +287,8 @@ header .nav p {
 }
 @media (max-width: 500px) {
   header .nav a,
-  header .nav p {
+  header .nav p,
+  header .nav h2 {
     font-size: 2rem;
   }
 }
@@ -306,6 +306,7 @@ header .nav .themeChanger {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 5rem;
   border-bottom: 4px dashed #3B945E;
 }
 @media (max-width: 787px) {
@@ -318,6 +319,7 @@ header .nav .themeChanger {
   .cta {
     width: 80%;
     margin: 0 auto;
+    padding: 0;
     align-content: center;
   }
 }
@@ -391,13 +393,19 @@ header .nav .themeChanger {
   }
 }
 .bottom .interactive,
+.bottom .fun {
+  background: #65CCB8;
+}
+.bottom .social {
+  background: #57BA98;
+}
+.bottom .interactive,
 .bottom .social,
 .bottom .fun {
   width: 90%;
   flex-wrap: wrap;
   justify-content: center;
   align-item: center;
-  background: #65CCB8;
   padding: 1.25%;
   margin: 1.25%;
   border-radius: 2rem;
