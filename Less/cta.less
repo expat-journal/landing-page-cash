@@ -43,6 +43,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
 //        border: 1px solid yellow;
         width: 100%;
 
@@ -53,8 +55,8 @@
     }
 
         .cta_why {
-            justify-content: center;
-            align-items: center;
+//            justify-content: center;
+//            align-items: center;
             h2, p {
                 text-align: center;
                 margin-top: 1rem;
@@ -64,13 +66,14 @@
         }
         
         .btn {
+//            align-items: center;
             border-radius: 2rem;
             width: 20rem;
             height: 5rem;
-            background-color: @epic-teal;
+            background-color: @light-teal;
             cursor: pointer;
             font-size: 2rem;
-            color: @eggshell-white;
+            color: @mirage;
             margin-bottom: .4rem;
             
             
@@ -78,8 +81,8 @@
                 width: 30rem;
             }
             &:hover {
-                background-color: @eggshell-white;
-                color: @epic-teal;
+                background-color: @mirage;
+                color: @light-teal;
             }
             
         }

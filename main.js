@@ -12,7 +12,7 @@ const font = document.querySelector('body');
 changeTheme.addEventListener('click', function(eventObject) {
     
     console.log("clicked Change Background");
-    container.style.backgroundColor = "black";
+    container.style.backgroundColor = "@dark-teal";
 
 });
 
@@ -26,7 +26,7 @@ changeImage.addEventListener('click', function(eventObject) {
 changeButton.addEventListener('click', function(eventObject) {
     
     console.log("clicked Change Button");
-    button.style.backgroundColor = "green";
+    button.style.backgroundColor = "@mirage";
 
 });
 
