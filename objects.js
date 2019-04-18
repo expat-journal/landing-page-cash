@@ -50,13 +50,6 @@ const max = new TeamMember({
 });
 
 
-console.log(cash);
-console.log(stephanie);
-console.log(amarachi);
-console.log(jeremiah);
-console.log(thierry);
-console.log(max);
-
 const team = [{
     name: 'Cash',
     role: 'UI/UX Dev',
@@ -100,3 +93,58 @@ team.forEach(function(x) {
 });
 
 console.log(nameAndGender);
+
+
+const photoMax = document.querySelector('.max');
+
+photoMax.addEventListener('click', function(eventObject) {
+    
+    console.log(max);
+
+});
+
+const photoSteph = document.querySelector('.stephanie');
+
+photoSteph.addEventListener('click', function(eventObject) {
+    
+    console.log(stephanie);
+
+});
+
+
+const photoAmarachi = document.querySelector('.amarachi');
+
+photoAmarachi.addEventListener('click', function(eventObject) {
+    
+    console.log(amarachi);
+
+});
+
+
+const photoJeremiah = document.querySelector('.jeremiah');
+
+photoJeremiah.addEventListener('click', function(eventObject) {
+    
+    console.log(jeremiah);
+
+});
+
+
+const photoThierry = document.querySelector('.thierry');
+
+photoThierry.addEventListener('click', function(eventObject) {
+    
+    console.log(thierry);
+
+});
+
+
+const photoCash = document.querySelector('.cash');
+
+photoCash.addEventListener('click', function(eventObject) {
+    
+    console.log(cash);
+
+});
+
+

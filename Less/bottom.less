@@ -9,17 +9,24 @@
         align-items: center;
         width: 100%;
     }
+    
+    .interactive, .fun {
+        background: @green;
+    }
+    .social {
+        background: @light-teal;
+    }
     .interactive, .social, .fun {
         width: 90%;
 //        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-item: center;
-        background: @epic-teal;
+//        background: @dark-teal;
         padding: 1.25%;
         margin: 1.25%;
         border-radius: 2rem;
-        color: @eggshell-white;
+        color: @mirage;
         
         @media @mobile {
             padding: 2rem;
@@ -29,5 +36,5 @@
         }
         
         
-        }
     }
+}

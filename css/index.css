@@ -134,6 +134,7 @@ html {
 }
 body {
   font-family: 'Roboto', sans-serif;
+  background: #182628;
 }
 h1,
 h2,
@@ -148,6 +149,7 @@ h1 {
 }
 h2 {
   font-size: 4rem;
+  cursor: pointer;
 }
 h3 {
   font-size: 3rem;
@@ -160,163 +162,180 @@ p {
 .container {
   max-width: 2000px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background: #182628;
   color: #65CCB8;
 }
 @media (max-width: 500px) {
   .container {
-    width: 100%;
-    margin: 0;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
-#c2 header {
+.black {
+  background-color: black;
+}
+.mirage {
+  background-color: #182628;
+}
+#container2 header {
   margin-bottom: 5rem;
 }
 .about_main {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-around;
-  max-width: 1245px;
 }
 @media (max-width: 500px) {
   .about_main {
     width: 100%;
-    margin: auto 1rem;
+    margin: 0 auto;
     padding: 0.5rem;
   }
 }
-.about_main .about_mission,
-.about_main .about_location {
+.about_main .about_content {
+  padding: 2rem;
   width: 30rem;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   color: #3B945E;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .about_main .about_mission,
-  .about_main .about_location {
+  .about_main .about_content {
     width: 100%;
   }
 }
-.team1,
-.team2 {
+.team {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  .team1,
-  .team2 {
+  .team {
     flex-direction: column;
   }
 }
-.team1 .max,
-.team2 .max,
-.team1 .stephanie,
-.team2 .stephanie,
-.team1 .amarachi,
-.team2 .amarachi,
-.team1 .jeremiah,
-.team2 .jeremiah,
-.team1 .thierry,
-.team2 .thierry,
-.team1 .cash,
-.team2 .cash {
-  background: #65CCB8;
-  padding: 1rem;
+.team .max,
+.team .stephanie,
+.team .amarachi,
+.team .jeremiah,
+.team .thierry,
+.team .cash {
+  background: #57BA98;
+  padding: 0.5rem;
   margin: 2rem;
   border-radius: 1rem;
-  width: 40.15rem;
-  height: 28.5rem;
+  height: auto;
+  width: 25%;
+}
+@media (max-width: 787px) {
+  .team .max,
+  .team .stephanie,
+  .team .amarachi,
+  .team .jeremiah,
+  .team .thierry,
+  .team .cash {
+    width: 40%;
+  }
 }
 @media (max-width: 500px) {
-  .team1 .max,
-  .team2 .max,
-  .team1 .stephanie,
-  .team2 .stephanie,
-  .team1 .amarachi,
-  .team2 .amarachi,
-  .team1 .jeremiah,
-  .team2 .jeremiah,
-  .team1 .thierry,
-  .team2 .thierry,
-  .team1 .cash,
-  .team2 .cash {
+  .team .max,
+  .team .stephanie,
+  .team .amarachi,
+  .team .jeremiah,
+  .team .thierry,
+  .team .cash {
     width: 80%;
     margin: 1rem auto;
   }
 }
-.team1 .max p,
-.team2 .max p,
-.team1 .stephanie p,
-.team2 .stephanie p,
-.team1 .amarachi p,
-.team2 .amarachi p,
-.team1 .jeremiah p,
-.team2 .jeremiah p,
-.team1 .thierry p,
-.team2 .thierry p,
-.team1 .cash p,
-.team2 .cash p {
+.team .max p,
+.team .stephanie p,
+.team .amarachi p,
+.team .jeremiah p,
+.team .thierry p,
+.team .cash p {
   color: #182628;
 }
 header {
-  max-width: 98%;
+  max-width: 100%;
   display: flex;
-  margin-bottom: 1rem;
-  margin-right: 0;
   padding-top: 1rem;
-  justify-content: space-between;
 }
-header .header_content {
-  color: #3B945E;
+@media (max-width: 500px) {
+  header {
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 500px) {
+  header .nav .h1 {
+    font-size: 3rem;
+    margin: auto;
+  }
 }
 header .nav {
   margin: 0 auto;
 }
 header .nav a,
-header .nav p {
+header .nav p,
+header .nav h2 {
   font-size: 3rem;
   text-decoration: none;
   color: #3B945E;
   cursor: pointer;
 }
-header .nav .themeChanger,
-header .nav .imgChanger,
-header .nav .btnChanger,
-header .nav .fontChanger {
-  font-size: 1.5rem;
+@media (max-width: 500px) {
+  header .nav a,
+  header .nav p,
+  header .nav h2 {
+    font-size: 2rem;
+  }
 }
-header .navHidden #hidden {
-  visibility: hidden;
+header .nav .themeChanger {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  header .nav .themeChanger {
+    font-size: 2rem;
+  }
 }
 .cta {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 10rem;
+  margin: 0 auto;
+  padding: 5rem;
   border-bottom: 4px dashed #3B945E;
+}
+@media (max-width: 787px) {
+  .cta {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 500px) {
   .cta {
-    width: 100%;
-    flex-direction: column;
+    width: 80%;
     margin: 0 auto;
+    padding: 0;
     align-content: center;
   }
 }
 .cta .cta_img img {
   width: 100%;
   max-width: 50rem;
-  padding: 3rem;
-  margin: 2rem;
   border-radius: 4rem;
+}
+@media (max-width: 787px) {
+  .cta .cta_img img {
+    width: 98%;
+  }
 }
 @media (max-width: 500px) {
   .cta .cta_img img {
-    width: padding: 0;
+    padding: 0;
     margin: 0;
   }
 }
@@ -326,6 +345,8 @@ header .navHidden #hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 @media (max-width: 500px) {
@@ -333,10 +354,6 @@ header .navHidden #hidden {
     width: 100%;
     justify-content: center;
   }
-}
-.cta .cta_column .cta_why {
-  justify-content: center;
-  align-items: center;
 }
 .cta .cta_column .cta_why h2,
 .cta .cta_column .cta_why p {
@@ -376,13 +393,19 @@ header .navHidden #hidden {
   }
 }
 .bottom .interactive,
+.bottom .fun {
+  background: #3B945E;
+}
+.bottom .social {
+  background: #65CCB8;
+}
+.bottom .interactive,
 .bottom .social,
 .bottom .fun {
   width: 90%;
   flex-wrap: wrap;
   justify-content: center;
   align-item: center;
-  background: #65CCB8;
   padding: 1.25%;
   margin: 1.25%;
   border-radius: 2rem;

@@ -7,28 +7,27 @@ const changeFont = document.querySelector('.fontChanger');
 const container = document.querySelector('.container');
 const image = document.querySelector('.travelImg');
 const button = document.querySelector('.btn');
-const font = document.querySelector('body');
+const body = document.querySelector('body');
 
 changeTheme.addEventListener('click', function(eventObject) {
     
-    console.log("clicked Change Background");
-    container.style.backgroundColor = "black";
-
+//    console.log("clicked Change Background");
+//    container.style.backgroundColor = "black";
+      if (body.classList.contains('black')) {
+          body.classList.remove('black');
+          body.classList.add('mirage');
+          changeTheme.textContent = "Lights Off";
+      }
+      else {
+          body.classList.remove('mirage');
+          body.classList.add('black');
+          changeTheme.textContent = "Lights On";
+      }     
 });
 
-changeImage.addEventListener('click', function(eventObject) {
-    
-    console.log("clicked Change Image");
-    image.src = "Images/commute.jpg";
 
-});
 
-changeButton.addEventListener('click', function(eventObject) {
-    
-    console.log("clicked Change Button");
-    button.style.backgroundColor = "green";
 
-});
 
 
 

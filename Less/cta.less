@@ -1,33 +1,36 @@
 .cta {
-//    border: 1px solid red;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 10rem;
+    margin: 0 auto;
+    padding: 5rem;
     border-bottom: 4px dashed @green;
     
-    @media @mobile {
-        width: 100%;
+    @media @tablet {
         flex-direction: column;
         margin: 0 auto;
+    }
+    @media @mobile {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
         align-content: center;
         
     }
     .cta_img {
-        
+
         
         img {
             
             width: 100%;
             max-width: 50rem;
-//            height: auto;
-            padding: 3rem;
-            margin: 2rem;
             border-radius: 4rem;
             
+            @media @tablet {
+                width: 98%;
+            }
             @media @mobile {
-                width: 
                 padding: 0;
                 margin: 0;
             }
@@ -36,13 +39,13 @@
     
     
     .cta_column {
-
-//        background: @dark-vanilla;
         padding: 1rem;
         border-radius: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
 //        border: 1px solid yellow;
         width: 100%;
 
@@ -53,8 +56,7 @@
     }
 
         .cta_why {
-            justify-content: center;
-            align-items: center;
+
             h2, p {
                 text-align: center;
                 margin-top: 1rem;
@@ -64,13 +66,14 @@
         }
         
         .btn {
+
             border-radius: 2rem;
             width: 20rem;
             height: 5rem;
-            background-color: @epic-teal;
+            background-color: @light-teal;
             cursor: pointer;
             font-size: 2rem;
-            color: @eggshell-white;
+            color: @mirage;
             margin-bottom: .4rem;
             
             
@@ -78,8 +81,8 @@
                 width: 30rem;
             }
             &:hover {
-                background-color: @eggshell-white;
-                color: @epic-teal;
+                background-color: @mirage;
+                color: @light-teal;
             }
             
         }

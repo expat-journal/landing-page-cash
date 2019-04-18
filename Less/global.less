@@ -5,10 +5,14 @@
 
 html {
   font-size: 62.5%;
+  
+
+
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: @mirage;
     
 }
 
@@ -18,12 +22,13 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 4.1rem;
-    color: @epic-teal;
+    color: @light-teal;
 }
 
 
 h2 {
     font-size: 4rem;
+    cursor: pointer;
 }
 h3 {
   font-size: 3rem;
@@ -41,14 +46,24 @@ p {
 .container {
   max-width: 2000px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background: @eggshell-white;
-  color: @epic-teal;
+//  background: @mirage;
+  color: @light-teal;
     
     @media @mobile {
-        width: 100%;
-        margin: 0;
+        max-width: 100%;
+        margin: 0 auto;
     }
     
+}
+
+.black {
+    background-color: black;
+    
+}
+
+.mirage {
+    background-color: @mirage;
 }
 
