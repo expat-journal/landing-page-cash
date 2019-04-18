@@ -135,7 +135,6 @@ html {
 }
 body {
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
 }
 h1,
 h2,
@@ -168,8 +167,8 @@ p {
 }
 @media (max-width: 500px) {
   .container {
-    width: 100%;
-    margin: 0;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 #c2 header {
@@ -186,8 +185,8 @@ p {
     padding: 0.5rem;
   }
 }
-.about_main .about_mission,
-.about_main .about_location {
+.about_main .about_content {
+  padding: 2rem;
   width: 30rem;
   height: auto;
   display: flex;
@@ -196,8 +195,7 @@ p {
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .about_main .about_mission,
-  .about_main .about_location {
+  .about_main .about_content {
     width: 100%;
   }
 }
@@ -263,15 +261,20 @@ p {
   color: #182628;
 }
 header {
-  max-width: 98%;
+  max-width: 100%;
   display: flex;
-  margin-bottom: 1rem;
-  margin-right: 0;
   padding-top: 1rem;
-  justify-content: space-between;
 }
-header .header_content {
-  color: #3B945E;
+@media (max-width: 500px) {
+  header {
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 500px) {
+  header .nav .h1 {
+    font-size: 3rem;
+    margin: auto;
+  }
 }
 header .nav {
   margin: 0 auto;
@@ -283,21 +286,26 @@ header .nav p {
   color: #3B945E;
   cursor: pointer;
 }
-header .nav .themeChanger,
-header .nav .imgChanger,
-header .nav .btnChanger,
-header .nav .fontChanger {
-  font-size: 1.5rem;
+@media (max-width: 500px) {
+  header .nav a,
+  header .nav p {
+    font-size: 2rem;
+  }
 }
-header .navHidden #hidden {
-  visibility: hidden;
+header .nav .themeChanger {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  header .nav .themeChanger {
+    font-size: 2rem;
+  }
 }
 .cta {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 10rem;
+  margin: 0 auto;
   border-bottom: 4px dashed #3B945E;
 }
 @media (max-width: 787px) {
@@ -308,7 +316,7 @@ header .navHidden #hidden {
 }
 @media (max-width: 500px) {
   .cta {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     align-content: center;
   }
@@ -316,13 +324,16 @@ header .navHidden #hidden {
 .cta .cta_img img {
   width: 100%;
   max-width: 50rem;
-  padding: 3rem;
-  margin: 2rem;
   border-radius: 4rem;
+}
+@media (max-width: 787px) {
+  .cta .cta_img img {
+    width: 98%;
+  }
 }
 @media (max-width: 500px) {
   .cta .cta_img img {
-    width: padding: 0;
+    padding: 0;
     margin: 0;
   }
 }

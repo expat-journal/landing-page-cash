@@ -1,33 +1,47 @@
 header {
-    max-width: 98%;
+    max-width: 100%;
     display: flex;
-    margin-bottom: 1rem;
-    margin-right: 0;
+//    border: 1px solid red;
+//    margin-bottom: 1rem;
     padding-top: 1rem;
-    justify-content: space-between;
-    .header_content {
-        color: @green;
+    
+    @media @mobile {
+        margin: 1rem auto;
+    }
+    .nav .h1 {
+        @media @mobile {
+            font-size: 3rem;
+            margin: auto;
+        }
     }
     
     
     .nav {
         margin: 0 auto;
+        
             a, p {
+                
                 font-size: 3rem;
                 text-decoration: none;
                 color: @green;
                 cursor: pointer;
+                
+                
+                @media @mobile {
+                    font-size: 2rem;
+                }
 
             }
         
-            .themeChanger, .imgChanger, .btnChanger, .fontChanger {
-                font-size: 1.5rem;
+            .themeChanger {
+                font-size: 3rem;
+                
+                @media @mobile {
+                    font-size: 2rem;
+                }
         }      
     }   
-    
-    .navHidden #hidden {
-        visibility: hidden;
-    }
+
         
  }
     
