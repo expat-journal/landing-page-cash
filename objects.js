@@ -16,21 +16,21 @@ const cash = new TeamMember({
 
 const stephanie = new TeamMember({
     name: 'Stephanie',
-    role: 'Frontend',
+    role: 'Frontend Dev',
     class: 'Web18',
     gender: 'Female'
 });
 
 const amarachi = new TeamMember({
     name: 'Amarachi',
-    role: 'Frontend',
+    role: 'Frontend Dev',
     class: 'Web18',
     gender: 'Female'
 });
 
 const jeremiah = new TeamMember({
     name: 'Jeremiah',
-    role: 'Backend',
+    role: 'Backend Dev',
     class: 'Web17',
     gender: 'Male'
 });
@@ -99,7 +99,7 @@ const photoMax = document.querySelector('.max');
 
 photoMax.addEventListener('click', function(eventObject) {
     
-    console.log(max);
+    alert(`Hello, my name is ${max.name}, I am the ${max.role}, and I come from ${max.class}.`);
 
 });
 
@@ -107,7 +107,7 @@ const photoSteph = document.querySelector('.stephanie');
 
 photoSteph.addEventListener('click', function(eventObject) {
     
-    console.log(stephanie);
+    alert(`Hello, my name is ${stephanie.name}, I am the ${stephanie.role}, and I come from ${stephanie.class}.`);
 
 });
 
@@ -116,7 +116,8 @@ const photoAmarachi = document.querySelector('.amarachi');
 
 photoAmarachi.addEventListener('click', function(eventObject) {
     
-    console.log(amarachi);
+    alert(`Hello, my name is ${amarachi.name}, I am the ${amarachi.role}, and I come from ${amarachi.class}.`);
+
 
 });
 
@@ -125,7 +126,7 @@ const photoJeremiah = document.querySelector('.jeremiah');
 
 photoJeremiah.addEventListener('click', function(eventObject) {
     
-    console.log(jeremiah);
+    alert(`Hello, my name is ${jeremiah.name}, I am the ${jeremiah.role}, and I come from ${jeremiah.class}.`);
 
 });
 
@@ -134,7 +135,7 @@ const photoThierry = document.querySelector('.thierry');
 
 photoThierry.addEventListener('click', function(eventObject) {
     
-    console.log(thierry);
+    alert(`Hello, my name is ${thierry.name}, I am the ${thierry.role}, and I come from ${thierry.class}.`);
 
 });
 
@@ -143,8 +144,7 @@ const photoCash = document.querySelector('.cash');
 
 photoCash.addEventListener('click', function(eventObject) {
     
-    console.log(cash);
-
+    alert(`Hello, my name is ${cash.name}, I am the ${cash.role}, and I come from ${cash.class}.`);
 });
 
 
