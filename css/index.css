@@ -183,7 +183,7 @@ p {
 @media (max-width: 500px) {
   .about_main {
     width: 100%;
-    margin: auto 1rem;
+    margin: 0 auto;
     padding: 0.5rem;
   }
 }
@@ -229,7 +229,7 @@ p {
   margin: 2rem;
   border-radius: 1rem;
   width: 40.15rem;
-  height: 28.5rem;
+  height: auto;
 }
 @media (max-width: 500px) {
   .team1 .max,
