@@ -420,3 +420,7 @@ header .nav .themeChanger {
     border-radius: 2rem;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+}
