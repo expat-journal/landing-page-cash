@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: #182628;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -176,9 +177,7 @@ p {
 }
 .about_main {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-around;
-  max-width: 1245px;
 }
 @media (max-width: 500px) {
   .about_main {
@@ -194,6 +193,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   color: #3B945E;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
   .about_main .about_mission,
@@ -300,10 +300,15 @@ header .navHidden #hidden {
   margin: 0px 10rem;
   border-bottom: 4px dashed #3B945E;
 }
+@media (max-width: 787px) {
+  .cta {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 500px) {
   .cta {
     width: 100%;
-    flex-direction: column;
     margin: 0 auto;
     align-content: center;
   }
