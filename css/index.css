@@ -276,6 +276,7 @@ header {
 }
 header .nav {
   margin: 0 auto;
+  align-items: center;
 }
 header .nav a,
 header .nav p,
@@ -354,6 +355,9 @@ header .nav .themeChanger {
     width: 100%;
     justify-content: center;
   }
+}
+.cta .cta_column .cta_why {
+  margin-bottom: 2.5rem;
 }
 .cta .cta_column .cta_why h2,
 .cta .cta_column .cta_why p {
